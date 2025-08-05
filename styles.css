@@ -1,0 +1,412 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background-color: #ffffff;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+/* Hero Section */
+.hero {
+    padding: 120px 0 80px 0;
+}
+
+.hero-name {
+    font-size: 4.5rem;
+    font-weight: 400;
+    margin-bottom: 32px;
+    line-height: 1;
+}
+
+.first-name {
+    font-weight: 300;
+}
+
+.last-name {
+    font-weight: 600;
+}
+
+.hero-description {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: #4a4a4a;
+    margin-bottom: 32px;
+    max-width: 600px;
+}
+
+.hero-contact {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.8;
+    word-wrap: break-word;
+}
+
+.hero-contact a {
+    color: #1a1a1a;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.hero-contact a:hover {
+    border-bottom-color: #1a1a1a;
+    opacity: 1;
+}
+
+.separator {
+    margin: 0 8px;
+    color: #ccc;
+}
+
+/* Section Styles */
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 16px;
+    color: #1a1a1a;
+}
+
+.section-subtitle {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #4a4a4a;
+    margin-bottom: 48px;
+}
+
+/* About Section */
+.about {
+    background-color: #fafafa;
+}
+
+.about-content p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #4a4a4a;
+    margin-bottom: 24px;
+    max-width: 700px;
+}
+
+.about-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Selected Work Section */
+.selected-work {
+    background-color: #ffffff;
+}
+
+.project-category {
+    margin-bottom: 64px;
+}
+
+.project-category:last-child {
+    margin-bottom: 0;
+}
+
+.category-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #666;
+    margin-bottom: 24px;
+}
+
+.project-card {
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 32px;
+    margin-bottom: 24px;
+    transition: all 0.2s ease;
+}
+
+.project-card:hover {
+    border-color: #d0d0d0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.project-card:last-child {
+    margin-bottom: 0;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.project-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 4px;
+}
+
+.project-year {
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 4px;
+}
+
+.project-award {
+    font-size: 0.875rem;
+    color: #8b5a3c;
+    font-weight: 500;
+}
+
+.project-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #4a4a4a;
+    margin-bottom: 24px;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.project-tech span {
+    background: #f5f5f5;
+    color: #666;
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border: 1px solid #e5e5e5;
+}
+
+/* Archive Section */
+.archive {
+    background-color: #fafafa;
+}
+
+.achievement-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.achievement-item {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.achievement-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.achievement-header {
+    margin-bottom: 16px;
+}
+
+.achievement-header h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 4px;
+}
+
+.achievement-org {
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 2px;
+}
+
+.achievement-date {
+    font-size: 0.875rem;
+    color: #666;
+}
+
+.achievement-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #4a4a4a;
+    margin-bottom: 12px;
+}
+
+.achievement-note {
+    font-size: 0.875rem;
+    color: #8b5a3c;
+    font-style: italic;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #ffffff;
+}
+
+.contact-intro {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #4a4a4a;
+    max-width: 600px;
+}
+
+/* Footer */
+.footer {
+    background-color: #fafafa;
+    padding: 48px 0;
+    border-top: 1px solid #e5e5e5;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 0.875rem;
+    color: #666;
+    margin: 0;
+}
+
+.footer-note {
+    margin-top: 4px !important;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    .hero {
+        padding: 80px 0 60px 0;
+    }
+    
+    .hero-name {
+        font-size: 3rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
+    
+    .hero-contact {
+        font-size: 0.875rem;
+    }
+    
+    .separator {
+        display: block;
+        margin: 4px 0;
+        opacity: 0;
+    }
+    
+    section {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1.125rem;
+    }
+    
+    .project-card {
+        padding: 24px;
+    }
+    
+    .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .achievement-list {
+        gap: 32px;
+    }
+    
+    .achievement-item {
+        padding-bottom: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+    
+    .hero-name {
+        font-size: 2.5rem;
+    }
+    
+    .project-card {
+        padding: 20px;
+    }
+    
+    .project-tech {
+        gap: 6px;
+    }
+    
+    .project-tech span {
+        font-size: 0.7rem;
+        padding: 3px 10px;
+    }
+}
+
+/* Smooth scrolling improvements */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+/* Focus styles for accessibility */
+a:focus,
+button:focus {
+    outline: 2px solid #4a90e2;
+    outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+    .hero-contact .separator {
+        display: inline;
+        margin: 0 8px;
+    }
+    
+    .project-card {
+        break-inside: avoid;
+        border: 1px solid #ddd;
+        box-shadow: none;
+    }
+} 
