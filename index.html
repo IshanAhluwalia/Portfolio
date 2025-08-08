@@ -9,30 +9,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1 class="hero-name">
-                <span class="first-name">Ishan</span><br>
-                <span class="last-name">Ahluwalia</span>
-            </h1>
-            <p class="hero-description">
-                Building AI-powered solutions at the intersection of healthcare and technology. Currently pursuing Computer Science and Applied Mathematics at the University of Pennsylvania's School of Engineering and Science.
-            </p>
-            <div class="hero-contact">
-                <a href="mailto:ishanah@seas.upenn.edu">ishanah@seas.upenn.edu</a>
-                <span class="separator">//</span>
-                <a href="tel:+19717707522">(971) 770-7522</a>
-                <span class="separator">//</span>
-                <a href="https://linkedin.com/in/ishan-ahluwalia" target="_blank">linkedin/in/ishan-ahluwalia</a>
-                <span class="separator">//</span>
-                <a href="https://github.com/IshanAhluwalia" target="_blank">github.com/IshanAhluwalia</a>
+    <div class="layout">
+        <aside class="sidebar">
+            <div class="sidebar-inner">
+                <h1 class="sidebar-name">Ishan Ahluwalia</h1>
+                <p class="sidebar-tagline">CS + Applied Math @ UPenn • AI, Systems, BCI</p>
+                <div class="sidebar-links">
+                    <a href="mailto:ishanah@seas.upenn.edu">ishanah@seas.upenn.edu</a>
+                    <a href="tel:+19717707522">(971) 770-7522</a>
+                    <a href="https://linkedin.com/in/ishan-ahluwalia" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://github.com/IshanAhluwalia" target="_blank" rel="noopener">GitHub</a>
+                </div>
+                <nav class="sidebar-nav">
+                    <a class="nav-btn" href="#about">About</a>
+                    <a class="nav-btn" href="#projects">Projects</a>
+                    <a class="nav-btn" href="#archive">Highlights</a>
+                    <a class="nav-btn" href="#contact">Contact</a>
+                </nav>
             </div>
-        </div>
-    </section>
+        </aside>
+        <main class="main">
 
     <!-- About Section -->
-    <section class="about">
+    <section id="about" class="about">
         <div class="container">
             <h2 class="section-title">About</h2>
             <h3 class="section-subtitle">Building things, breaking more things, having fun.</h3>
@@ -51,7 +50,7 @@
     </section>
 
     <!-- Selected Work Section -->
-    <section class="selected-work">
+    <section id="projects" class="selected-work">
         <div class="container">
             <h2 class="section-title">Selected Work</h2>
             <h3 class="section-subtitle">Featured Projects</h3>
@@ -207,7 +206,7 @@
     </section>
 
     <!-- Archive Section -->
-    <section class="archive">
+    <section id="archive" class="archive">
         <div class="container">
             <h2 class="section-title">Archive</h2>
             <h3 class="section-subtitle">Highlights</h3>
@@ -289,7 +288,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">Contact</h2>
             <h3 class="section-subtitle">Always happy to chat</h3>
@@ -310,6 +309,8 @@
         </div>
     </footer>
 
+        </main>
+    </div>
     <script src="script.js"></script>
-</body>
-</html> 
+    </body>
+</html>

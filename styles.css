@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-    max-width: 900px;
+    max-width: 880px;
     margin: 0 auto;
     padding: 0 24px;
 }
@@ -40,9 +40,40 @@ a:hover {
 }
 
 /* Hero Section */
-.hero {
-    padding: 120px 0 80px 0;
+.hero { display:none; }
+
+/* New two-column layout */
+.layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 28px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 24px;
 }
+
+.sidebar {
+    position: sticky;
+    top: 24px;
+    height: fit-content;
+}
+
+.sidebar-inner {
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 18px;
+    background: #fff;
+}
+
+.sidebar-name { font-size: 1.6rem; line-height:1.2; margin-bottom: 6px; }
+.sidebar-tagline { color:#4b5563; font-size: 0.95rem; margin-bottom: 14px; }
+.sidebar-links { display:flex; flex-direction:column; gap:8px; margin-bottom: 16px; }
+.sidebar-links a { color:#111827; border-bottom:1px dashed #e5e7eb; width:fit-content; }
+.sidebar-nav { display:flex; flex-wrap:wrap; gap:8px; }
+.nav-btn { padding:8px 10px; border:1px solid #e5e7eb; border-radius:8px; background:#fafafa; font-weight:600; }
+.nav-btn:hover{ background:#f3f4f6; }
+
+.main { min-width: 0; }
 
 .hero-name {
     font-size: 4.5rem;
@@ -91,9 +122,7 @@ a:hover {
 }
 
 /* Section Styles */
-section {
-    padding: 80px 0;
-}
+section { padding: 56px 0; }
 
 .section-title {
     font-size: 2rem;
@@ -102,12 +131,7 @@ section {
     color: #1a1a1a;
 }
 
-.section-subtitle {
-    font-size: 1.25rem;
-    font-weight: 400;
-    color: #4a4a4a;
-    margin-bottom: 48px;
-}
+.section-subtitle { font-size: 1.1rem; font-weight: 400; color: #4a4a4a; margin-bottom: 24px; }
 
 /* About Section */
 .about {
@@ -127,9 +151,7 @@ section {
 }
 
 /* Selected Work Section */
-.selected-work {
-    background-color: #ffffff;
-}
+.selected-work { background-color: #ffffff; }
 
 /* Grid layout for projects */
 .projects-grid {
@@ -142,7 +164,7 @@ section {
     background: #ffffff;
     border: 1px solid #e5e5e5;
     border-radius: 12px;
-    padding: 24px;
+    padding: 18px;
     transition: all 0.2s ease;
 }
 
@@ -175,11 +197,7 @@ section {
     margin-bottom: 4px;
 }
 
-.project-year {
-    font-size: 0.875rem;
-    color: #666;
-    margin-bottom: 4px;
-}
+.project-year { font-size: 0.8rem; color: #374151; background:#f3f4f6; border:1px solid #e5e7eb; padding:2px 8px; border-radius:999px; display:inline-block; }
 
 .project-award {
     font-size: 0.875rem;
@@ -329,13 +347,13 @@ section {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .layout { grid-template-columns: 1fr; gap:16px; margin:20px auto; }
+    .sidebar { position: static; }
     .container {
         padding: 0 20px;
     }
     
-    .hero {
-        padding: 80px 0 60px 0;
-    }
+    .hero { display:none; }
     
     .hero-name {
         font-size: 3rem;
