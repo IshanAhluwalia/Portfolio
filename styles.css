@@ -131,29 +131,18 @@ section {
     background-color: #ffffff;
 }
 
-.project-category {
-    margin-bottom: 64px;
-}
-
-.project-category:last-child {
-    margin-bottom: 0;
-}
-
-.category-title {
-    font-size: 0.875rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: #666;
-    margin-bottom: 24px;
+/* Grid layout for projects */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
 }
 
 .project-card {
     background: #ffffff;
     border: 1px solid #e5e5e5;
     border-radius: 12px;
-    padding: 32px;
-    margin-bottom: 24px;
+    padding: 24px;
     transition: all 0.2s ease;
 }
 
@@ -162,8 +151,14 @@ section {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-.project-card:last-child {
-    margin-bottom: 0;
+
+.project-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 14px;
+    border: 1px solid #eee;
 }
 
 .project-header {
@@ -228,6 +223,18 @@ section {
     border-bottom: 1px solid #1a1a1a;
     padding-bottom: 2px;
 }
+/* Button-style GitHub links */
+.project-actions { margin-top: 12px; }
+.btn-link {
+    display: inline-block;
+    padding: 10px 14px;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    background: #f9fafb;
+    color: #111827;
+    font-weight: 600;
+}
+.btn-link:hover { background: #f3f4f6; }
 
 .project-link:hover {
     opacity: 0.7;
@@ -360,9 +367,8 @@ section {
         font-size: 1.125rem;
     }
     
-    .project-card {
-        padding: 24px;
-    }
+    .project-card { padding: 20px; }
+    .project-image { height: 140px; }
     
     .project-header {
         flex-direction: column;
